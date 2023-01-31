@@ -1,0 +1,38 @@
+{
+  "lambdatest_auth": {
+    "username": "yash.jainsourcedigital",
+    "access_key": "R8wSXoVE0MlpUPXrslGw0bZdothPDwvKsX1AVIfTMqISD5dFNX"
+  },
+  "browsers": [
+    {
+      "browser": "Chrome",
+      "platform": "Windows 10",
+      "versions": ["latest-1"]
+    }
+  ],
+
+  "run_settings": {
+    "config_file": "cypress.config.js",
+    "reporter_config_file": "base_reporter_config.json",
+    "build_name": "Kurator-Assets-e2e",
+    "parallels": 5,
+    "specs": "./cypress/e2e/e2e testing/SAM Builder/*.cy.js",
+    "ignore_files": "",
+    "feature_file_support": true,
+    "network": true,
+    "headless": false,
+    "sync": true,
+    "npm_dependencies": {
+      "npm-run-all": "4.1.2",
+      "typescript": "3.7.4",
+      "cypress-file-upload": "5.0.8",
+      "cypress-real-events": "^1.7.4",
+      "cypress-browser-permissions": "^1.1.0"
+    },
+    "cypress_version": "10.0.0"
+  },
+  "tunnel_settings": {
+    "tunnel": false,
+    "tunnel_name": null
+  }
+}
